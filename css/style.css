@@ -423,7 +423,7 @@ template {
 
 .search-form {
   margin-right: auto;
-  margin-left: 108px;
+  margin-left: 109px;
   position: relative;
   height: 40px;
   border-radius: 6px;
@@ -462,6 +462,7 @@ template {
 }
 
 .search-form__button {
+  padding-top: 4px;
   position: absolute;
   top: 0;
   right: 0;
@@ -495,6 +496,7 @@ template {
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   font-size: 14px;
+  color: #333333;
   line-height: 18px;
 }
 /*# sourceMappingURL=style.css.map */
