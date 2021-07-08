@@ -10,7 +10,7 @@
 
 .logo
   width: 176px
-  height: 20px
+  height: 17px
 
 .search-form
   margin-right: auto
@@ -61,10 +61,11 @@
     line-height: 18px
 
 .nav
-  padding: 31px 0 31px 0
   display: flex
   justify-content: space-between
   align-items: center
+  &__header
+    padding: 31px 0 31px 0
   &-list
     margin: 0
     padding: 0
@@ -74,3 +75,17 @@
       text-decoration: none
       color: #fff
       text-transform: uppercase
+
+.burger-menu
+  padding: 0
+  display: none
+  flex-direction: column
+  justify-content: space-between
+  height: 11px
+  background-color: transparent
+  border: none
+  cursor: pointer
+  &__item
+    width: 16px
+    height: 1px
+    background-color: $text-color
