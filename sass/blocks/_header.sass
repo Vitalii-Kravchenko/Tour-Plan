@@ -1,12 +1,15 @@
-.header
+.navbar
   &-top
     padding-top: 40px
     padding-bottom: 40px
     display: flex
     justify-content: space-between
     align-items: center
+  &-bottom
+    background-color: $dark-blue
 
 .logo
+  width: 176px
   height: 20px
 
 .search-form
@@ -39,6 +42,8 @@
     background-color: $active-color
     border: none
     cursor: pointer
+  &__icon
+    width: 16px
 
 .user
   display: flex
@@ -54,3 +59,18 @@
     +Mulish(normal, 14px)
     color: $text-color
     line-height: 18px
+
+.nav
+  padding: 31px 0 31px 0
+  display: flex
+  justify-content: space-between
+  align-items: center
+  &-list
+    margin: 0
+    padding: 0
+    list-style: none
+    &__link
+      +Mulish(bold, 14px)
+      text-decoration: none
+      color: #fff
+      text-transform: uppercase
