@@ -568,7 +568,7 @@ template {
   cursor: pointer;
 }
 
-.burger__item {
+.burger-menu__item {
   width: 16px;
   height: 1px;
   background-color: #333333;
