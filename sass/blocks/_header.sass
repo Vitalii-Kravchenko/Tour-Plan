@@ -14,38 +14,39 @@
   width: 176px
   height: 17px
 
-.search-form
-  margin-right: auto
-  margin-left: 109px
-  position: relative
-  height: 40px
-  border-radius: 6px
-  overflow: hidden
-  &__input
-    padding-left: 23px
-    padding-right: 75px
-    width: 350px
-    height: 100%
-    +Mulish(normal, 12px)
-    line-height: 15px
-    color: $text-color
-    border: none
-    background-color: #F5FAFE
-    outline: none
-    &::placeholder
-      color: $placeholder-color
-  &__button
-    padding-top: 4px
-    position: absolute
-    top: 0
-    right: 0
-    width: 65px
-    height: 100%
-    background-color: $active-color
-    border: none
-    cursor: pointer
-  &__icon
-    width: 16px
+.search
+  &-form
+    margin-right: auto
+    margin-left: 109px
+    position: relative
+    height: 40px
+    border-radius: 6px
+    overflow: hidden
+    &__input
+      padding-left: 23px
+      padding-right: 75px
+      width: 350px
+      height: 100%
+      +Mulish(normal, 12px)
+      line-height: 15px
+      color: $text-color
+      border: none
+      background-color: #F5FAFE
+      outline: none
+      &::placeholder
+        color: $placeholder-color
+    &__button
+      padding-top: 4px
+      position: absolute
+      top: 0
+      right: 0
+      width: 65px
+      height: 100%
+      background-color: $active-color
+      border: none
+      cursor: pointer
+    &__icon
+      width: 16px
 
 .user
   display: flex
@@ -76,17 +77,18 @@
       color: #fff
       text-transform: uppercase
 
-.burger-menu
-  padding: 0
-  display: none
-  flex-direction: column
-  justify-content: space-between
-  align-items: center
-  width: 16px
-  height: 11px
-  background-color: transparent
-  border: none
-  cursor: pointer
+.burger
+  &-menu
+    padding: 0
+    display: none
+    flex-direction: column
+    justify-content: space-between
+    align-items: center
+    width: 16px
+    height: 11px
+    background-color: transparent
+    border: none
+    cursor: pointer
   &__item
     width: 16px
     height: 1px
