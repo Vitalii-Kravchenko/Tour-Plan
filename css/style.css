@@ -601,6 +601,102 @@ template {
   text-decoration: none;
 }
 
+.hotel__container {
+  padding: 19px 0 0 0;
+}
+
+.hotel-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-info__description {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #333333;
+}
+
+.hotel-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.hotel-wrapper__title {
+  margin: 2px 14px 0 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 24px;
+  color: #333333;
+  text-transform: uppercase;
+}
+
+.hotel-raiting {
+  padding-top: 3px;
+  width: 65px;
+  height: 45px;
+  border-radius: 4px;
+  background-color: #EC1F46;
+  text-align: center;
+}
+
+.hotel-raiting__text {
+  font-family: "Mulish", sans-serif;
+  font-weight: 600;
+  font-size: 8px;
+  color: #fff;
+}
+
+.hotel-raiting__counter {
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 14px;
+  color: #fff;
+}
+
+.hotel-raiting__counter::after {
+  content: "5";
+  font-size: 10px;
+}
+
+.stars {
+  width: 48px;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.stars__item {
+  margin-right: -2px;
+  width: 8px;
+  height: 8px;
+}
+
+.offer {
+  padding-top: 4px;
+  width: 70px;
+  height: 20px;
+  border-radius: 3px;
+  text-align: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 10px;
+  color: #fff;
+  background-color: #EC1F46;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -657,6 +753,31 @@ template {
     display: -ms-flexbox;
     display: flex;
   }
+  .hotel-info__text {
+    width: 100%;
+  }
+  .hotel-raiting {
+    display: none;
+  }
+  .hotel-wrapper {
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .hotel-wrapper__title {
+    margin-top: 6px;
+    -ms-flex-preferred-size: 100%;
+        flex-basis: 100%;
+  }
+  .stars {
+    -ms-flex-preferred-size: auto;
+        flex-basis: auto;
+  }
+  .offer {
+    -webkit-box-ordinal-group: 0;
+        -ms-flex-order: -1;
+            order: -1;
+  }
 }
 
 @media (max-width: 480px) {
@@ -669,6 +790,15 @@ template {
   .logo {
     width: 99px;
     height: 16px;
+  }
+  .hotel__container {
+    padding-top: 6px;
+  }
+  .hotel-wrapper__title {
+    margin: 13px 0 0 0;
+  }
+  .stars {
+    margin-right: 17px;
   }
 }
 /*# sourceMappingURL=style.css.map */

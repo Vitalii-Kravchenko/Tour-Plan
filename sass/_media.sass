@@ -48,6 +48,26 @@
   .burger-menu
     display: flex
 
+  // Hotel
+
+  .hotel
+    &-info
+      &__text
+        width: 100%
+    &-raiting
+      display: none
+    &-wrapper
+      justify-content: space-between
+      &__title
+        margin-top: 6px
+        flex-basis: 100%
+
+  .stars
+    flex-basis: auto
+
+  .offer
+    order: -1
+
 @media (max-width: 480px)
   .container
     width: 88%
@@ -59,3 +79,15 @@
   .logo
     width: 99px
     height: 16px
+
+  // Hotel
+
+  .hotel
+    &__container
+      padding-top: 6px
+    &-wrapper
+      &__title
+        margin: 13px 0 0 0
+
+  .stars
+    margin-right: 17px
