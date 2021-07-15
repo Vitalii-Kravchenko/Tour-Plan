@@ -21,15 +21,15 @@
               alt="Logo: Best Tour Plan"
             />
           </a>
-          <form class="search-form" action="#">
+          <form class="form header-form" action="#">
             <input
-              class="search-form__input"
+              class="form__input header-form__input"
               type="text"
               placeholder="Search Location"
             />
-            <button class="search-form__button">
+            <button class="form__button header-form__button">
               <img
-                class="search-form__icon"
+                class="form__icon header-form__icon"
                 src="img/header/navbar-top/search-icon.svg"
                 alt="Icon: search"
               />
@@ -250,7 +250,35 @@
       <!-- /.container -->
     </section>
     <!-- /.hotel -->
+    <section
+      class="newsletter"
+      data-parallax="scroll"
+      data-image-src="img/newsletter/background.jpg"
+    >
+      <div class="newsletter-container">
+        <h2 class="newsletter-title">
+          subscribe to our
+          <strong class="newsletter-title__strong">Newsletter</strong>
+        </h2>
+        <form class="form newsletter-form" action="#">
+          <input
+            class="form__input newsletter-form__input"
+            type="text"
+            placeholder="Your email address"
+          />
+          <button class="form__button newsletter-form__button">Send</button>
+        </form>
+      </div>
+      <!-- /.newsletter-container -->
+    </section>
+    <!-- /.newsletter -->
 
+    <script
+      src="https://code.jquery.com/jquery-3.6.0.min.js"
+      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
   </body>

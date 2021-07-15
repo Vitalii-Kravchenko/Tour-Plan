@@ -1,0 +1,35 @@
+.newsletter
+  position: relative
+  &::before
+    content: ""
+    position: absolute
+    top: 0
+    left: 0
+    width: 100%
+    height: 100%
+    background: rgba(10, 34, 61, 0.8)
+  &-container
+    padding: 100px 0 92px 0
+    margin: 0 auto
+    display: flex
+    justify-content: space-between
+    align-items: center
+    max-width: 732px
+  &-form
+    margin: 0
+    height: 55px
+    &__input
+      padding-left: 32px
+      padding-top: 4px
+    &__button
+      color: #fff
+      +Mulish(bold, 12px)
+  &-title
+    margin: 0
+    max-width: 250px
+    +Mulish(300, 24px)
+    color: #fff
+    z-index: 5
+    &__strong
+      +Mulish(600, 36px)
+      text-transform: uppercase
