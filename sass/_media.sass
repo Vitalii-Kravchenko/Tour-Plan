@@ -6,6 +6,10 @@
     &-slider
       width: 590px
 
+  .card
+    width: 225px
+    height: 225px
+
 @media (max-width: 992px)
   .container
     width: 700px
@@ -77,12 +81,21 @@
       &__text
         margin: 27px 0 0 0
       &__button
-        top: 42%
-        transform: translateY(-46%)
+        top: 51%
+        transform: translateY(-44%)
         &--prev
           left: 0
         &--next
           right: 0
+
+  .activities
+    &__container
+      padding: 14px 0 98px 0
+
+  .card
+    width: 49%
+    height: 255px
+    margin-bottom: 20px
 
 @media (max-width: 767px)
   .header
@@ -174,6 +187,16 @@
     &__title
       font-size: 26px
 
+  .card
+    width: 100%
+
+  .activities
+    &__container
+      padding-bottom: 60px
+    &-title
+      margin: 0 0 37px 0
+      +Mulish(bold, 18px)
+
 @media (max-width: 480px)
   .container
     width: 88%
@@ -216,7 +239,7 @@
 
   .reviews
     &-container
-      padding: 40px 0 70px 0
+      padding: 40px 0 2px 0
     &__title
       margin: 0 auto
       max-width: 260px
