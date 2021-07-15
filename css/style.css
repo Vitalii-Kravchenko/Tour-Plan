@@ -945,6 +945,7 @@ img {
   .swiper-slide__item {
     -o-object-fit: cover;
        object-fit: cover;
+    height: 100%;
   }
 }
 
