@@ -1040,6 +1040,9 @@ img {
   .breadcrumb__container {
     padding: 19px 0 19px 0;
   }
+  .hotel__container {
+    padding: 19px 0 60px 0;
+  }
   .hotel-info {
     padding-bottom: 20px;
   }
@@ -1073,6 +1076,10 @@ img {
     width: 340px;
     height: 210px;
   }
+  .newsletter-container {
+    padding: 95px 0 97px 0;
+    max-width: 700px;
+  }
 }
 
 @media (max-width: 767px) {
@@ -1092,6 +1099,9 @@ img {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+  }
+  .hotel__container {
+    padding: 19px 0 41px 0;
   }
   .hotel-info__text {
     width: 100%;
@@ -1141,6 +1151,32 @@ img {
   }
   .map iframe {
     width: 100%;
+  }
+  .newsletter-container {
+    padding: 70px 0 83px 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    max-width: 88%;
+  }
+  .newsletter-form {
+    margin-top: 34px;
+    width: 280px;
+  }
+  .newsletter-title {
+    line-height: 37px;
+    font-family: "Mulish", sans-serif;
+    font-weight: 300;
+    font-size: 20px;
+  }
+  .newsletter-title__strong {
+    font-family: "Mulish", sans-serif;
+    font-weight: 600;
+    font-size: 30px;
   }
 }
 
