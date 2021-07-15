@@ -574,6 +574,10 @@ img {
   background-color: #333333;
 }
 
+.breadcrumb {
+  background-color: #F5FAFE;
+}
+
 .breadcrumb__container {
   padding: 18px 0 19px 0;
 }
@@ -599,6 +603,10 @@ img {
 .breadcrumb-list__link {
   color: #0A223D;
   text-decoration: none;
+}
+
+.hotel {
+  background-color: #F5FAFE;
 }
 
 .hotel__container {
