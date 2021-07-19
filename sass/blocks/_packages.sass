@@ -1,0 +1,100 @@
+.packages
+  background-color: #F5FAFE
+  &__container
+    padding: 43px 0 70px 0px
+  &__title
+    margin-top: 0
+    margin-bottom: 66px
+    +Mulish(bold, 36px)
+    color: $text-color
+    text-transform: uppercase
+    text-align: center
+  &-grid
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    grid-gap: 30px
+  &__first
+    &-card
+      display: grid !important
+      grid-template-columns: 1fr 1fr
+      grid-column-start: 1
+      grid-column-end: 3
+      &::before
+        padding: 9px 22px 8px 11px !important
+        font-size: 12px !important
+  &-card
+    position: relative
+    display: flex
+    flex-direction: column
+    height: 500px
+    border-radius: 8px
+    overflow: hidden
+    &__img
+      height: 250px
+      object-fit: cover
+    &::before
+      content: "Flash Offer"
+      padding: 5px 10px 4px 9px
+      position: absolute
+      top: 26px
+      left: 0
+      +Mulish(600, 8px)
+      color: #fff
+      background-color: $active-color
+      border-radius: 0px 4px 4px 0px
+    &__first
+      &-img
+        height: 500px
+      &-info
+        padding: 40px 21px 30px 44px !important
+      &-stars
+        flex-basis: auto
+      &-description
+        margin: 29px 0 0 0
+        +Mulish(normal, 14px)
+        line-height: 22.48px
+      &-room
+        margin: 43px 0 0 3px !important
+      &-price
+        margin-top: 29px !important
+        padding-left: 3px
+  &-info
+    padding: 30px 21px 25px 32px
+    display: flex
+    flex-direction: column
+    min-height: 250px
+    background-color: $dark-blue
+    color: #fff
+  &-title
+    margin: 2px 0 0 0
+    +Mulish(bold, 18px)
+  &-room
+    margin-top: 23px
+    &__about
+      margin-bottom: 8px
+    &__icon
+      margin-right: 10px
+      width: 14px
+      height: 14px
+      transform: translateY(2px)
+    &__text
+      +Mulish(normal, 12px)
+  &-price
+    margin-top: 15px
+    display: flex
+    justify-content: space-between
+    align-items: flex-end
+    &__old
+      +Mulish(normal, 14px)
+      text-decoration: line-through
+    &__new
+      margin-top: 8px
+      +Mulish(bold, 24px)
+    &__wrapper
+      display: flex
+      flex-direction: column
+  &-button
+    transform: translateY(6px)
+    width: 120px
+    height: 40px
+    +Nunito(600, 14px)

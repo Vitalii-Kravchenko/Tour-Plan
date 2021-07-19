@@ -10,6 +10,14 @@
     width: 225px
     height: 225px
 
+  .packages
+    &-info
+      padding: 30px 30px 25px 30px
+    &-card
+      &__first
+        &-info
+          padding: 25px 21px 30px 25px !important
+
 @media (max-width: 992px)
   .container
     width: 700px
@@ -97,6 +105,14 @@
     height: 255px
     margin-bottom: 20px
 
+  .packages
+    &-grid
+      grid-template-columns: 1fr 1fr
+    &-card
+      &__first
+        &-info
+          padding: 40px 26px 30px 30px !important
+
 @media (max-width: 767px)
   .header
     &-form
@@ -115,8 +131,6 @@
   .burger
     &-menu
       display: flex
-
-  // Hotel
 
   .hotel
     &__container
@@ -197,6 +211,32 @@
       margin: 0 0 37px 0
       +Mulish(bold, 18px)
 
+  .packages
+    &-grid
+      grid-template-columns: 1fr
+      grid-column-gap: 0
+    &__first
+      &-card
+        grid-template-columns: 1fr
+        grid-template-rows: 250px 1fr
+        &::before
+          padding: 5px 10px 4px 9px !important
+          font-size: 8px !important
+    &-card
+      &__first
+        &-img
+          height: 250px
+        &-info
+          padding: 30px 30px 25px 30px !important
+        &-stars
+          display: none
+        &-description
+          display: none
+        &-room
+          margin: 23px 0 0 0 !important
+        &-price
+          margin: 15px 0 0 0 !important
+
 @media (max-width: 480px)
   .container
     width: 88%
@@ -208,8 +248,6 @@
   .logo
     width: 99px
     height: 16px
-
-  // Hotel
 
   .hotel
     &__container
@@ -263,3 +301,16 @@
       margin: 0
     &__text
       line-height: 19px
+
+  .packages
+    &-info
+      height: 100%
+    &-card
+      height: 560px
+    &-price
+      flex-direction: column
+      align-items: flex-start
+    &-button
+      margin-top: 15px
+      transform: translateY(0)
+      width: 100%
