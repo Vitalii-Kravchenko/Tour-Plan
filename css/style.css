@@ -1290,7 +1290,7 @@ img {
 }
 
 .packages-card__img {
-  height: 250px;
+  min-height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
