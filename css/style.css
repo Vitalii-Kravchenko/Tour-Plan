@@ -1115,7 +1115,7 @@ img {
 .reviews-slider__text {
   margin: 26px 0 0 0;
   max-width: 537px;
-  height: 116px;
+  height: 100%;
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   font-size: 12px;
