@@ -1856,10 +1856,16 @@ img {
     line-height: 19px;
   }
   .packages-info {
-    height: 310px;
+    height: 310px !important;
   }
   .packages-card {
     height: 560px;
+  }
+  .packages-card__img {
+    height: 250px;
+  }
+  .packages-card__first-info {
+    padding: 25px 22px 26px 25px !important;
   }
   .packages-price {
     -webkit-box-orient: vertical;
