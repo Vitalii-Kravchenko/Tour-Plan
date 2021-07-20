@@ -45,23 +45,29 @@
     &__first
       &-img
         height: 500px
+      &-title
+        height: 40px
       &-info
-        padding: 40px 21px 30px 44px !important
+        padding: 40px 21px 36px 44px !important
+        justify-content: space-between
       &-stars
         flex-basis: auto
       &-description
-        margin: 29px 0 0 0
+        margin: 0 0 -10px 0
+        height: 154px
         +Mulish(normal, 14px)
         line-height: 22.48px
+        overflow: auto
       &-room
         margin: 43px 0 0 3px !important
       &-price
-        margin-top: 29px !important
+        margin-top: 23px !important
         padding-left: 3px
   &-info
-    padding: 30px 21px 25px 32px
+    padding: 30px 21px 31px 32px
     display: flex
     flex-direction: column
+    justify-content: space-between
     min-height: 250px
     background-color: $dark-blue
     color: #fff
@@ -69,7 +75,6 @@
     margin: 2px 0 0 0
     +Mulish(bold, 18px)
   &-room
-    margin-top: 23px
     &__about
       margin-bottom: 8px
     &__icon
@@ -80,10 +85,11 @@
     &__text
       +Mulish(normal, 12px)
   &-price
-    margin-top: 15px
+    margin-top: -5px
     display: flex
     justify-content: space-between
     align-items: flex-end
+    flex-wrap: wrap
     &__old
       +Mulish(normal, 14px)
       text-decoration: line-through
@@ -94,7 +100,8 @@
       display: flex
       flex-direction: column
   &-button
+    padding: 13px 28px 11px 26px
+    width: auto
+    height: auto
     transform: translateY(6px)
-    width: 120px
-    height: 40px
     +Nunito(600, 14px)
