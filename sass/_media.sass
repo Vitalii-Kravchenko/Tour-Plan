@@ -341,3 +341,24 @@
       margin-top: 15px
       transform: translateY(0)
       width: 100%
+
+@media ( min-width: 993px )
+  .footer
+    &-ul
+      &__link
+        transition: 0.15s ease-out
+        transition-property: color
+        &:hover
+          color: lighten(#BDBDBD, 30%)
+    &__button
+      transition: 0.2s ease-out
+      transition-property: background-color
+      &:hover
+        background-color: lighten($active-color, 10%)
+
+    &-bottom
+      &__link
+        transition: 0.15s ease-out
+        transition-property: color
+        &:hover
+          color: darken(#fff, 30%)

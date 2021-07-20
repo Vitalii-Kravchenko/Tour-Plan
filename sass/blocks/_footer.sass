@@ -1,0 +1,150 @@
+.footer
+  background-color: $dark-blue
+  &__container
+    padding: 110px 0 43px 0
+  &-grid
+    display: grid
+    grid-template-columns: repeat(4, minmax(250px, 1fr))
+    grid-column-gap: 30px
+    grid-auto-rows: minmax(48px, min-content)
+  &__link
+    &-logo
+      margin-top: 28px
+      grid-row: 1/ 5
+  &__logo
+    width: 153px
+  &-list
+    color: #fff
+    &__title
+      margin: 0
+      +Mulish(bold, 18px)
+      text-transform: uppercase
+    &__description
+      margin: 28px 0 0 0
+      +Mulish(normal, 14px)
+      color: #BDBDBD
+  &-categories
+    grid-row: 1 / 5
+    &__ul
+      margin: 20px 0 0 0 !important
+  &-ul
+    margin: 16px 0 0 0
+    padding: 0
+    list-style: none
+    &__link
+      +Mulish(normal, 14px)
+      color: #BDBDBD
+      text-decoration: none
+      line-height: 22.4px
+  &-social
+    margin-top: 25px
+    grid-row: 2 / 5
+    grid-column: span 2
+    display: flex
+    align-items: center
+    align-self: start
+    &__links
+      margin-left: 44px
+      display: flex
+      justify-content: space-between
+      min-width: 83px
+    &__link
+      text-decoration: none
+    &__img
+      width: 20px
+  &-legal
+    margin-right: 5px
+    justify-self: end
+  &-contact
+    margin: 12px 0 0 -4px
+    grid-column: span 2
+    &__item
+      margin-top: 21px
+      padding-left: 9px
+    &__geo
+      margin-right: 12px
+      display: inline-block
+      width: 20px
+      transform: translateY(5px)
+      &-icon
+        width: 14px
+    &__phone
+      margin: 0 15px 0 -3px
+      display: inline-block
+      width: 20px
+      transform: translateY(5px)
+      &-item
+        margin-top: 18px
+    &__link
+      display: inline-block
+      width: 93%
+      margin-left: 36px
+      &--ml-0
+        margin-left: 0
+    &__mail
+      margin-right: 12px
+      display: inline-block
+      width: 20px
+      transform: translateY(2px)
+      &-item
+        margin-top: 23px
+      &-icon
+        width: 16.67px
+  &-message
+    grid-column: span 2
+  &__form
+    margin-top: 35px
+    display: flex
+    justify-content: space-between
+    flex-wrap: wrap
+  &__input
+    padding: 17px 38px 15px 23px
+    border: none
+    border-radius: 4px
+    outline: none
+    &::placeholder
+      +Mulish(normal, 12px)
+      color: #BDBDBD
+  &__message
+    margin-top: 15px
+    padding: 19px 23px 19px 23px
+    width: 100%
+    height: 123px
+    overflow: auto
+    border: none
+    border-radius: 4px
+    outline: none
+    resize: none
+    &::placeholder
+      +Mulish(normal, 12px)
+      color: #BDBDBD
+  &__button
+    margin-top: 23px
+    padding: 18px 30px 19px 30px
+    min-width: 160px
+    height: auto
+    +Mulish(bold, 12px)
+  &__info
+    margin-top: 21px
+    +Mulish(bold, 12px)
+    color: #E0E0E0
+    align-self: center
+  &-bottom
+    margin-top: 97px
+    display: flex
+    justify-content: flex-end
+    &__wrapper
+      display: flex
+      justify-content: space-between
+      align-items: center
+      min-width: 696px
+    &__links
+      display: flex
+      justify-content: space-between
+    &__link
+      margin-right: 12px
+      +Mulish(normal, 12px)
+      color: #fff
+      text-decoration: none
+    &__img
+      width: 136px
