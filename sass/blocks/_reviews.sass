@@ -1,3 +1,12 @@
+::-webkit-scrollbar
+  width: 6px
+  background-color: #F5FAFE
+  border-radius: 3px
+
+::-webkit-scrollbar-thumb
+  background-color: #ec1f46
+  border-radius: 3px
+
 .reviews
   background-color: #F5FAFE
   &-container
@@ -21,6 +30,7 @@
       display: flex
       flex-direction: column
       align-items: center
+      height: 283px
       max-width: 731px
       background-color: #fff
       border-radius: 8px
@@ -63,9 +73,10 @@
       color: $text-color
       line-height: 19.2px
       text-align: justify
+      overflow: auto
     &__button
       position: absolute
-      top: 53%
+      top: 55%
       transform: translateY(-50%)
       z-index: 10
       width: 30px
