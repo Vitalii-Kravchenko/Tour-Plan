@@ -1113,8 +1113,9 @@ img {
 }
 
 .reviews-slider__text {
-  margin: 28px 0 0 0;
+  margin: 26px 0 0 0;
   max-width: 537px;
+  height: 116px;
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   font-size: 12px;
@@ -1345,7 +1346,7 @@ img {
 
 .packages-card__first-description {
   margin: 0 0 -10px 0;
-  height: 156px;
+  height: 157px;
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   font-size: 14px;
