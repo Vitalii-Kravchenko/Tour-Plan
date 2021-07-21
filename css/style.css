@@ -578,6 +578,7 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
+  overflow: hidden;
 }
 
 .burger-menu__item {
@@ -2137,6 +2138,7 @@ img {
     left: 0;
     right: 0;
     bottom: 0;
+    overflow: auto;
   }
   .navbar--mobile_fixed {
     position: fixed;
