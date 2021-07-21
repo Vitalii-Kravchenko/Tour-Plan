@@ -1,4 +1,5 @@
 .navbar
+  background-color: #fff
   &-top
     padding-top: 40px
     padding-bottom: 40px
@@ -70,6 +71,13 @@
     margin: 0
     padding: 0
     list-style: none
+    &--mobile
+      &_hidden
+        display: none
+    &__item
+      &--mobile
+        &_visible
+          display: none
     &__link
       +Mulish(bold, 14px)
       text-decoration: none

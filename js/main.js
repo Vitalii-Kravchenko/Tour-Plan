@@ -29,3 +29,9 @@ const reviewsSlider = new Swiper('.reviews-slider', {
     enabled: true,
   },
 });
+
+let menuButton = document.querySelector(".burger-menu");
+
+menuButton.addEventListener("click", function() {
+  document.querySelector(".navbar-bottom").classList.toggle("navbar-bottom--mobile_visible");
+});

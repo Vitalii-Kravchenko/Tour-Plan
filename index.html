@@ -11,7 +11,7 @@
     <title>Best Tour Plan - making your dreams come true</title>
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar--mobile_fixed">
       <div class="container navbar__container">
         <div class="navbar-top">
           <a class="logo" href="#">
@@ -21,7 +21,7 @@
               alt="Logo: Best Tour Plan"
             />
           </a>
-          <form class="form header-form" action="#">
+          <form class="form header-form header-form--mobile_hidden" action="#">
             <input
               class="form__input header-form__input"
               type="text"
@@ -35,7 +35,7 @@
               />
             </button>
           </form>
-          <a class="user" href="#">
+          <a class="user user--mobile_hidden" href="#">
             <img
               class="user__image"
               src="img/header/navbar-top/user-photo.jfif"
@@ -55,6 +55,39 @@
       <div class="navbar-bottom">
         <div class="container navbar-bottom__container">
           <nav class="nav navbar__nav">
+            <ul class="nav-list nav-list--mobile_hidden">
+              <li class="nav-list__item nav-list__item--mobile_visible">
+                <a class="user user--mobile_visible" href="#">
+                  <img
+                    class="user__image"
+                    src="img/header/navbar-top/user-photo.jfif"
+                    alt="User photo"
+                  />
+                  <span class="user__name user__name--light">Nathan</span>
+                </a>
+              </li>
+            </ul>
+            <ul class="nav-list nav-list--mobile_hidden">
+              <li class="nav-list__item nav-list__item--mobile_visible">
+                <form
+                  class="form header-form header-form--mobile_visible"
+                  action="#"
+                >
+                  <input
+                    class="form__input header-form__input"
+                    type="text"
+                    placeholder="Search Location"
+                  />
+                  <button class="form__button header-form__button">
+                    <img
+                      class="form__icon header-form__icon"
+                      src="img/header/navbar-top/search-icon.svg"
+                      alt="Icon: search"
+                    />
+                  </button>
+                </form>
+              </li>
+            </ul>
             <ul class="nav-list">
               <li class="nav-list__item">
                 <a href="#" class="nav-list__link">All Deals</a>
