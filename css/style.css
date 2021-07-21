@@ -578,7 +578,7 @@ img {
   background-color: transparent;
   border: none;
   cursor: pointer;
-  overflow: hidden;
+  outline: none;
 }
 
 .burger-menu__item {
