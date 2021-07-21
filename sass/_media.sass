@@ -331,10 +331,12 @@
       grid-template-columns: 1fr
       grid-row-gap: 30px
     &__link-logo
+      grid-column: span 1
       grid-row: 1 / 2
       justify-self: start
       align-self: end
     &-social
+      grid-column: span 1
       margin-top: 40px
       margin-left: 0
       grid-row: 2 / 3
@@ -345,26 +347,32 @@
       &__links
         margin: 10px 0 0 0
     &-legal
+      grid-column: span 1
       margin: 0
       grid-row: 3 / 4
       justify-self: start
       align-self: end
     &-additional
+      grid-column: span 1
       margin: 0
       grid-row: 4 / 5
       justify-self: start
       align-self: end
     &-categories
+      grid-column: span 1
       margin: 0
       grid-row: 5 / 6
       justify-self: start
       align-self: end
     &-contact
+      grid-column: span 1
       margin: 0
       grid-row: 6 / 7
       justify-self: start
       align-self: end
     &-message
+      width: 100%
+      grid-column: span 1
       margin: 40px 0 0 0
       grid-row: 7 / 8
       justify-self: start
@@ -377,9 +385,12 @@
         width: 100%
         flex-direction: column
     &__message
+      grid-column: span 1
       width: 100%
     &__info
       margin-right: 2px
+      &-bottom
+        width: 100%
 
 @media (max-width: 480px)
   .container
@@ -479,6 +490,7 @@
       padding: 44px 0 21px 0
     &__link
       &-logo
+        grid-column: span 1
         margin-top: 24px
     &-list
       &__description
@@ -488,15 +500,18 @@
       &__links
         margin: 0 0 0 11px
     &-social
+      grid-column: span 1
       margin-top: 9px
       &__links
         margin: 23px 0 0 3px
     &-additional
+      grid-column: span 1
       margin-top: 3px
-      grid-column: span 5
     &-categories
+      grid-column: span 1
       margin: 3px 0 0 0
     &-contact
+      grid-column: span 1
       margin: 13px 0 0 0
       &__item
         margin-top: 20px
@@ -510,8 +525,8 @@
       &__wrapper
         flex-direction: column
     &-message
+      grid-column: span 1
       margin: 32px 0 0 0
-      grid-column: span 6
     &__form
       margin-top: 16px
     &__button
