@@ -499,6 +499,10 @@
     &-ul
       &__links
         margin: 0 0 0 11px
+      &__link
+        &-wrapper
+          &:nth-child(1n+2)
+            margin-top: 5px
     &-social
       grid-column: span 1
       margin-top: 9px
@@ -520,7 +524,7 @@
         margin-right: 4px
       &__link
         display: inline-block
-        width: 100%
+
     &-bottom
       &__wrapper
         flex-direction: column
@@ -528,7 +532,7 @@
       grid-column: span 1
       margin: 32px 0 0 0
     &__form
-      margin-top: 16px
+      margin-top: 18px
     &__button
       margin-top: 15px
       order: 2
@@ -568,3 +572,11 @@
         transition-property: color
         &:hover
           color: darken(#fff, 30%)
+
+    &-social
+      &__img
+        transition: 0.15s ease-out
+        transition-property: color
+        &:hover
+          border: 2px solid darken(#BDBDBD, 10%)
+          border-radius: 50%
