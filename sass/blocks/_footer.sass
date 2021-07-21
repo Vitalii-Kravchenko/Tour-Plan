@@ -36,6 +36,8 @@
       color: #BDBDBD
       text-decoration: none
       line-height: 22.4px
+    &__links
+      margin: 0 0 0 18px
   &-social
     margin-top: 25px
     grid-row: 2 / 5
@@ -59,35 +61,37 @@
     margin: 12px 0 0 -4px
     grid-column: span 2
     &__item
-      margin-top: 21px
+      margin-top: 25px
       padding-left: 9px
     &__geo
-      margin-right: 12px
-      display: inline-block
-      width: 20px
-      transform: translateY(5px)
-      &-icon
-        width: 14px
-    &__phone
-      margin: 0 15px 0 -3px
-      display: inline-block
-      width: 20px
-      transform: translateY(5px)
-      &-item
-        margin-top: 18px
-    &__link
-      display: inline-block
-      width: 93%
-      margin-left: 36px
-      &--ml-0
-        margin-left: 0
-    &__mail
-      margin-right: 12px
       display: inline-block
       width: 20px
       transform: translateY(2px)
+      &-icon
+        width: 14px
+      &-item
+        display: flex
+    &__phone
+      display: inline-block
+      width: 20px
+      transform: translateY(1px)
+      &-item
+        display: flex
+        margin-top: 20px
+      &-icon
+        width: 18.21px
+    &__link
+      display: inline-block
+      width: 93%
+      &--ml-0
+        margin-left: 0
+    &__mail
+      display: inline-block
+      width: 20px
+      transform: translateY(4px)
       &-item
         margin-top: 23px
+        display: flex
       &-icon
         width: 16.67px
   &-message
@@ -98,13 +102,19 @@
     justify-content: space-between
     flex-wrap: wrap
   &__input
-    padding: 17px 38px 15px 23px
+    padding: 19px 23px 18px 23px
+    width: 47%
     border: none
     border-radius: 4px
+    +Mulish(normal, 12px)
     outline: none
     &::placeholder
       +Mulish(normal, 12px)
       color: #BDBDBD
+    &-wrapper
+      display: flex
+      justify-content: space-between
+      width: 100%
   &__message
     margin-top: 15px
     padding: 19px 23px 19px 23px
@@ -115,17 +125,19 @@
     border-radius: 4px
     outline: none
     resize: none
+    +Mulish(normal, 12px)
     &::placeholder
       +Mulish(normal, 12px)
       color: #BDBDBD
   &__button
-    margin-top: 23px
+    margin-top: 22px
     padding: 18px 30px 19px 30px
     min-width: 160px
     height: auto
     +Mulish(bold, 12px)
   &__info
-    margin-top: 21px
+    margin-top: 22px
+    margin-right: 2px
     +Mulish(bold, 12px)
     color: #E0E0E0
     align-self: center
@@ -137,7 +149,7 @@
       display: flex
       justify-content: space-between
       align-items: center
-      min-width: 696px
+      width: 63%
     &__links
       display: flex
       justify-content: space-between

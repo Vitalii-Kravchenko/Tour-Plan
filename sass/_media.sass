@@ -18,6 +18,16 @@
         &-info
           padding: 25px 21px 30px 25px !important
 
+  .footer
+    &-grid
+      grid-template-columns: repeat(4, minmax(200px, 1fr))
+    &__input
+      padding: 17px 15px 15px 15px
+    &-additional
+      margin-left: -29px
+    &-social
+      margin-left: -29px
+
 @media (max-width: 992px)
   .container
     width: 700px
@@ -99,7 +109,7 @@
 
   .activities
     &__container
-      padding: 52px 0 98px 0
+      padding: 52px 0 50px 0
 
   .card
     width: 49%
@@ -117,6 +127,63 @@
       &__first
         &-info
           padding: 15px 22px 22px 25px !important
+
+  .footer
+    &__container
+      padding: 44px 0 29px 0
+    &-grid
+      grid-template-columns: repeat(6, 1fr)
+      grid-column-gap: 10px
+    &__logo
+      width: 96px
+    &-logo
+      grid-row: 1 / 5
+      grid-column: span 2
+    &-categories
+      margin-top: -2px
+      grid-row: 5 / 6
+      grid-column: span 2
+    &-additional
+      margin-top: -2px
+      margin-left: -36px
+      grid-row: 5 / 6
+      grid-column: span 2
+    &-social
+      margin-top: -12px
+      margin-left: 69px
+      align-self: center
+      grid-row: 1 / 5
+      grid-column: span 4
+    &-legal
+      margin-top: -3px
+      margin-right: 12px
+      grid-row: 5 / 6
+      grid-column: span 2
+    &-contact
+      margin: 63px 0 0 0
+      grid-column: span 6
+    &__input
+      padding: 19px 23px 18px 23px
+      width: 47%
+      &-wrapper
+        display: flex
+        justify-content: space-between
+        width: 93%
+    &-message
+      margin-top: 61px
+      grid-column: span 6
+    &__message
+      width: 93%
+    &__button
+      margin-top: 22px
+    &__info
+      margin-top: 23px
+      margin-right: 43px
+    &-bottom
+      margin-top: 60px
+      justify-content: space-between
+      &__wrapper
+        width: 100%
 
 @media (max-width: 767px)
   .header
@@ -253,6 +320,61 @@
         &-price
           margin: 0 0 0 0 !important
 
+  .footer
+    &-grid
+      grid-template-columns: 1fr
+      grid-row-gap: 30px
+    &__link-logo
+      grid-row: 1 / 2
+      justify-self: start
+      align-self: end
+    &-social
+      margin-top: 40px
+      margin-left: 0
+      grid-row: 2 / 3
+      justify-self: start
+      flex-direction: column
+      align-items: flex-start
+      align-self: end
+      &__links
+        margin: 10px 0 0 0
+    &-legal
+      margin: 0
+      grid-row: 3 / 4
+      justify-self: start
+      align-self: end
+    &-additional
+      margin: 0
+      grid-row: 4 / 5
+      justify-self: start
+      align-self: end
+    &-categories
+      margin: 0
+      grid-row: 5 / 6
+      justify-self: start
+      align-self: end
+    &-contact
+      margin: 0
+      grid-row: 6 / 7
+      justify-self: start
+      align-self: end
+    &-message
+      margin: 40px 0 0 0
+      grid-row: 7 / 8
+      justify-self: start
+      align-self: end
+    &__input
+      width: 100%
+      &:first-child
+        margin-bottom: 15px
+      &-wrapper
+        width: 100%
+        flex-direction: column
+    &__message
+      width: 100%
+    &__info
+      margin-right: 2px
+
 @media (max-width: 480px)
   .container
     width: 88%
@@ -324,6 +446,10 @@
     &__text
       line-height: 19px
 
+  .activities
+    &__container
+      padding-bottom: 40px
+
   .packages
     &-info
       height: 310px !important
@@ -341,6 +467,63 @@
       margin-top: 15px
       transform: translateY(0)
       width: 100%
+
+  .footer
+    &__container
+      padding: 44px 0 21px 0
+    &__link
+      &-logo
+        margin-top: 24px
+    &-list
+      &__description
+        margin: 26px 0 0 0
+        line-height: 22.4px
+    &-ul
+      &__links
+        margin: 0 0 0 11px
+    &-social
+      margin-top: 9px
+      &__links
+        margin: 23px 0 0 3px
+    &-additional
+      margin-top: 3px
+      grid-column: span 5
+    &-categories
+      margin: 3px 0 0 0
+    &-contact
+      margin: 13px 0 0 0
+      &__item
+        margin-top: 20px
+        padding-left: 0
+      &__geo
+        margin-right: 4px
+      &__link
+        display: inline-block
+        width: 100%
+    &-bottom
+      &__wrapper
+        flex-direction: column
+    &-message
+      margin: 32px 0 0 0
+      grid-column: span 6
+    &__form
+      margin-top: 16px
+    &__button
+      margin-top: 15px
+      order: 2
+    &__info
+      margin-top: 17px
+      width: 100%
+    &-bottom
+      margin-top: 31px
+      &__wrapper
+        align-items: flex-start
+      &__links
+        width: 100%
+      &__link
+        margin-right: 0
+      &__img
+        margin-top: 11px
 
 @media ( min-width: 993px )
   .footer
