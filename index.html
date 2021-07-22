@@ -588,11 +588,12 @@
           subscribe to our
           <strong class="newsletter-title__strong">Newsletter</strong>
         </h2>
-        <form class="form newsletter-form" action="#">
+        <form class="form newsletter-form" action="send.php" method="POST">
           <input
             class="form__input newsletter-form__input"
             type="text"
             placeholder="Your email address"
+            name="email"
           />
           <button class="form__button newsletter-form__button">Send</button>
         </form>
@@ -1030,17 +1031,19 @@
           <!-- /.footer-list -->
           <div class="footer-list footer-message">
             <h3 class="footer-list__title">send us a message</h3>
-            <form class="footer__form" action="#">
+            <form class="footer__form" action="send.php" method="POST">
               <div class="footer__input-wrapper">
                 <input
                   class="input footer__input"
                   type="text"
                   placeholder="Your Full Name*"
+                  name="name"
                 />
                 <input
                   class="input footer__input"
                   type="text"
                   placeholder="Phone Number*"
+                  name="phone"
                 />
               </div>
               <div class="footer__message-wrapper">
@@ -1049,6 +1052,7 @@
                   cols="30"
                   rows="10"
                   placeholder="Message"
+                  name="message"
                 ></textarea>
               </div>
               <div class="footer__info-bottom">
