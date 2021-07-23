@@ -2919,6 +2919,13 @@ img {
     border: 2px solid #a4a4a4;
     border-radius: 50%;
   }
+  .hotel-button {
+    -webkit-transition: 0.2s;
+    transition: 0.2s;
+  }
+  .hotel-button:hover {
+    background-color: #f04e6d;
+  }
 }
 
 @media (max-height: 540px) {
