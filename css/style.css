@@ -2920,4 +2920,12 @@ img {
     border-radius: 50%;
   }
 }
+
+@media (max-height: 540px) {
+  .modal__dialog {
+    padding: 20px 26px;
+    width: 95%;
+    height: 300px;
+  }
+}
 /*# sourceMappingURL=style.css.map */
