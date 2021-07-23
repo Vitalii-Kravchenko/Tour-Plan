@@ -2879,6 +2879,9 @@ img {
     padding: 20px 26px;
     width: 95%;
   }
+  .thanks__title {
+    font-size: 20px;
+  }
 }
 
 @media (min-width: 993px) {
