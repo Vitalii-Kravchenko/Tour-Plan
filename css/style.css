@@ -864,6 +864,7 @@ img {
   color: #fff;
   border: none;
   cursor: pointer;
+  outline: none;
 }
 
 .hotel-slider {
@@ -1868,8 +1869,6 @@ img {
 }
 
 .modal__overlay--visible {
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
   visibility: visible;
   opacity: 1;
 }
@@ -1903,8 +1902,6 @@ img {
 }
 
 .modal__dialog--visible {
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
   visibility: visible;
   opacity: 1;
 }
