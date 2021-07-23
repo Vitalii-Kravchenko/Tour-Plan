@@ -55,6 +55,12 @@ $(document).ready(function () {
 
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
+
+    if(body.css("overflow") == "hidden") {
+      body.css({"overflow":"auto"});
+    } else {
+      body.css({"overflow":"hidden"});
+    }
   }
 
   function closeModal(event) {
@@ -65,6 +71,12 @@ $(document).ready(function () {
 
     modalOverlay.removeClass("modal__overlay--visible");
     modalDialog.removeClass("modal__dialog--visible");
+
+    if(body.css("overflow") == "hidden") {
+      body.css({"overflow":"auto"});
+    } else {
+      body.css({"overflow":"hidden"});
+    }
   }
 
   $(document).on('keydown', function(event) {
