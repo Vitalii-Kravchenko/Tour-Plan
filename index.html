@@ -262,7 +262,9 @@
                 </div>
               </div>
               <!-- /.hotel-call -->
-              <button class="hotel-button">View Other Options</button>
+              <button class="hotel-button" data-toggle="modal">
+                View Other Options
+              </button>
             </div>
             <!-- /.hotel-number -->
             <div class="map">
@@ -1084,11 +1086,52 @@
     </footer>
     <!-- /.footer -->
 
-    <script
-      src="https://code.jquery.com/jquery-3.6.0.min.js"
-      integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-      crossorigin="anonymous"
-    ></script>
+    <div class="modal" id="booking-modal">
+      <div class="modal__overlay"></div>
+      <div class="modal__dialog">
+        <a href="#" class="modal__close">
+          <img src="img/close.svg" alt="Icon: Close" />
+        </a>
+        <h3 class="modal__title">booking</h3>
+        <form class="modal__form" action="send.php" method="POST">
+          <div class="modal__input-wrapper">
+            <input
+              class="input modal__input"
+              type="text"
+              placeholder="Your Full Name*"
+              name="name"
+            />
+            <input
+              class="input modal__input"
+              type="text"
+              placeholder="Phone Number*"
+              name="phone"
+            />
+            <input
+              class="input modal__input"
+              type="text"
+              placeholder="Your email address"
+              name="email"
+            />
+          </div>
+          <div class="modal__message-wrapper">
+            <textarea
+              class="modal__message"
+              cols="30"
+              rows="10"
+              placeholder="Message"
+              name="message"
+            ></textarea>
+          </div>
+          <div class="modal__info">
+            <button class="book-now modal__button">Send</button>
+            <span class="modal__info">* Required Fields</span>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <script src="js/jquery-3.6.0.min.js"></script>
     <script src="js/parallax.min.js"></script>
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>

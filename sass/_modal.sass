@@ -1,0 +1,80 @@
+.modal
+  &__overlay
+    position: fixed
+    top: 0
+    right: 0
+    bottom: 0
+    left: 0
+    background: rgba(0, 143, 223, 0.39)
+    z-index: 100
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__dialog
+    display: flex
+    flex-direction: column
+    align-items: center
+    padding: 33px 88px
+    position: fixed
+    top: 50%
+    left: 50%
+    max-width: 478px
+    transform: translate(-50%, -50%)
+    background-color: $dark-blue
+    color: #fff
+    border-radius: 8px
+    z-index: 101
+    visibility: hidden
+    opacity: 0
+    transition: opacity 0.2s
+    &--visible
+      visibility: visible
+      opacity: 1
+  &__close
+    position: absolute
+    top: 17px
+    right: 18px
+    text-decoration: none
+    cursor: pointer
+  &__title
+    margin: 0 0 18px 0
+    +Mulish(bold, 18px)
+    text-transform: uppercase
+  &__input
+    margin-bottom: 15px
+    padding: 19px 23px 18px 23px
+    width: 100%
+    border: none
+    border-radius: 4px
+    +Mulish(normal, 12px)
+    outline: none
+    &::placeholder
+      +Mulish(normal, 12px)
+      color: #BDBDBD
+  &__message
+    margin-bottom: 11px
+    padding: 19px 23px 19px 23px
+    width: 100%
+    height: 123px
+    overflow: auto
+    border: none
+    border-radius: 4px
+    outline: none
+    resize: none
+    +Mulish(normal, 12px)
+    &::placeholder
+      +Mulish(normal, 12px)
+      color: #BDBDBD
+  &__button
+    padding: 19px 30px 19px 30px
+    min-width: 160px
+    height: auto
+  &__info
+    display: flex
+    justify-content: space-between
+    align-items: center
+    +Mulish(bold, 12px)
+    color: #E0E0E0

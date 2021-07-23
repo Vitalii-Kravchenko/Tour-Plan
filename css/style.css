@@ -1853,6 +1853,183 @@ img {
   width: 136px;
 }
 
+.modal__overlay {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 143, 223, 0.39);
+  z-index: 100;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__overlay--visible {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__dialog {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 33px 88px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  max-width: 478px;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background-color: #0A223D;
+  color: #fff;
+  border-radius: 8px;
+  z-index: 101;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
+
+.modal__dialog--visible {
+  -webkit-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__close {
+  position: absolute;
+  top: 17px;
+  right: 18px;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.modal__title {
+  margin: 0 0 18px 0;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-transform: uppercase;
+}
+
+.modal__input {
+  margin-bottom: 15px;
+  padding: 19px 23px 18px 23px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  outline: none;
+}
+
+.modal__input::-webkit-input-placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__input:-ms-input-placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__input::-ms-input-placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__input::placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__message {
+  margin-bottom: 11px;
+  padding: 19px 23px 19px 23px;
+  width: 100%;
+  height: 123px;
+  overflow: auto;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  resize: none;
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+}
+
+.modal__message::-webkit-input-placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__message:-ms-input-placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__message::-ms-input-placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__message::placeholder {
+  font-family: "Mulish", sans-serif;
+  font-weight: normal;
+  font-size: 12px;
+  color: #BDBDBD;
+}
+
+.modal__button {
+  padding: 19px 30px 19px 30px;
+  min-width: 160px;
+  height: auto;
+}
+
+.modal__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  color: #E0E0E0;
+}
+
 @media (max-width: 1200px) {
   .container {
     max-width: 960px;
@@ -2104,6 +2281,21 @@ img {
             justify-content: space-between;
   }
   .footer-bottom__wrapper {
+    width: 100%;
+  }
+  .modal__dialog {
+    padding: 33px 45px;
+  }
+  .modal__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  .modal__button {
+    margin-top: 15px;
+  }
+  .modal__button {
     width: 100%;
   }
 }
@@ -2475,6 +2667,9 @@ img {
   .footer__info-bottom {
     width: 100%;
   }
+  .modal__dialog {
+    width: 80%;
+  }
 }
 
 @media (max-width: 480px) {
@@ -2681,6 +2876,10 @@ img {
   }
   .footer-bottom__img {
     margin-top: 11px;
+  }
+  .modal__dialog {
+    padding: 20px 26px;
+    width: 95%;
   }
 }
 
