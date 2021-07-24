@@ -30,7 +30,14 @@
     text-decoration: none
 
 @media ( max-width: 480px )
-
   .thanks
     &__title
       font-size: 20px
+
+@media ( min-width: 992px )
+  .thanks
+    &__button
+      transition: 0.2s ease-out
+      transition-property: background-color
+      &:hover
+        background-color: lighten(#EC1F46, 10%)

@@ -50,4 +50,16 @@
     font-size: 20px;
   }
 }
+
+@media (min-width: 992px) {
+  .thanks__button {
+    -webkit-transition: 0.2s ease-out;
+    transition: 0.2s ease-out;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+  }
+  .thanks__button:hover {
+    background-color: #f04e6d;
+  }
+}
 /*# sourceMappingURL=thanks.css.map */

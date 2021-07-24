@@ -120,6 +120,8 @@
       max-width: 200px
 
   .packages
+    &__container
+      padding: 30px 0 70px 0px
     &-grid
       grid-template-columns: 1fr 1fr
     &-info
@@ -128,6 +130,9 @@
       &__first
         &-info
           padding: 15px 22px 22px 25px !important
+    &__title
+      font-size: 30px
+      margin-bottom: 45px
 
   .footer
     &__container
@@ -244,6 +249,7 @@
       flex-direction: column
 
   .user
+    margin-left: 0
     margin-top: 10px
     flex-direction: column
     justify-content: center
@@ -321,6 +327,8 @@
     &-form
       margin-top: 34px
       width: 280px
+      &__input
+        width: 280px
     &-title
       line-height: 37px
       +Mulish(300, 20px)
@@ -374,6 +382,7 @@
           padding: 5px 10px 4px 9px !important
           font-size: 8px !important
     &-card
+      grid-column: span 2
       &__first
         &-img
           height: 250px
@@ -408,6 +417,9 @@
       align-self: end
       &__links
         margin: 10px 0 0 0
+      &__link
+        &:first-child
+          margin-left: 0
     &-legal
       grid-column: span 1
       margin: 0
@@ -534,11 +546,18 @@
     &__text
       line-height: 19px
 
+  .newsletter
+    &-form
+      &__input
+        padding-left: 20px
+
   .activities
     &__container
       padding-bottom: 40px
 
   .packages
+    &__container
+      padding-top: 50px
     &-info
       height: 310px !important
     &-card
@@ -555,6 +574,9 @@
       margin-top: 15px
       transform: translateY(0)
       width: 100%
+    &__title
+      font-size: 18px
+      margin-bottom: 35px
 
   .footer
     &__container
@@ -599,12 +621,15 @@
     &-bottom
       &__wrapper
         flex-direction: column
+      &__links
+        flex-wrap: wrap
     &-message
       grid-column: span 1
       margin: 32px 0 0 0
     &__form
       margin-top: 18px
     &__button
+      margin-right: 0
       margin-top: 15px
       order: 2
     &__info
@@ -629,6 +654,52 @@
       width: 95%
 
 @media ( min-width: 992px )
+  .header
+    &-form
+      &__button
+        transition: 0.2s ease-out
+        transition-property: background-color
+        &:hover
+          background-color: lighten($active-color, 10%)
+
+  .user
+    transition: 0.2s ease-out
+    transition-property: color
+    &:hover
+      color: lighten($active-color, 10%)
+
+  .nav
+    &-list
+      &__link
+        transition: 0.2s ease-out
+        transition-property: color
+        &:hover
+          color: lighten($active-color, 10%)
+
+  .breadcrumb
+    &-list
+      &__link
+        transition: 0.2s ease-out
+        transition-property: color
+        &:hover
+          color: lighten($active-color, 10%)
+
+  .hotel
+    &-phone
+      &__number
+        transition: 0.2s ease-out
+        transition-property: color
+        &:hover
+          color: lighten($active-color, 10%)
+
+  .newsletter
+    &-form
+      &__button
+        transition: 0.2s ease-out
+        transition-property: background-color
+        &:hover
+          background-color: lighten($active-color, 10%)
+
   .footer
     &-ul
       &__link
@@ -663,6 +734,12 @@
       transition-property: background-color
       &:hover
         background-color: lighten($active-color, 10%)
+
+  .book-now
+    transition: 0.2s ease-out
+    transition-property: background-color
+    &:hover
+      background-color: lighten($active-color, 10%)
 
 @media ( max-height: 540px )
   .modal
