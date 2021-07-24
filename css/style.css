@@ -1910,8 +1910,8 @@ img {
   z-index: 100;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
 }
 
 .modal__overlay--visible {
@@ -1932,7 +1932,7 @@ img {
           align-items: center;
   padding: 33px 88px;
   position: fixed;
-  top: 50%;
+  top: -100%;
   left: 50%;
   max-width: 478px;
   -webkit-transform: translate(-50%, -50%);
@@ -1943,13 +1943,14 @@ img {
   z-index: 101;
   visibility: hidden;
   opacity: 0;
-  -webkit-transition: opacity 0.2s;
-  transition: opacity 0.2s;
+  -webkit-transition: all 0.6s ease-out;
+  transition: all 0.6s ease-out;
   overflow: auto;
 }
 
 .modal__dialog--visible {
   visibility: visible;
+  top: 50%;
   opacity: 1;
 }
 

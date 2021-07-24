@@ -9,7 +9,7 @@
     z-index: 100
     visibility: hidden
     opacity: 0
-    transition: opacity 0.2s
+    transition: all 0.6s ease-out
     &--visible
       visibility: visible
       opacity: 1
@@ -19,7 +19,7 @@
     align-items: center
     padding: 33px 88px
     position: fixed
-    top: 50%
+    top: -100%
     left: 50%
     max-width: 478px
     transform: translate(-50%, -50%)
@@ -29,10 +29,11 @@
     z-index: 101
     visibility: hidden
     opacity: 0
-    transition: opacity 0.2s
+    transition: all 0.6s ease-out
     overflow: auto
     &--visible
       visibility: visible
+      top: 50%
       opacity: 1
   &__close
     position: absolute
