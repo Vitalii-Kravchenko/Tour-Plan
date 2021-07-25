@@ -36,6 +36,7 @@ $(document).ready(function () {
 
   menuButton.on("click", function() {
     $(".navbar-bottom").toggleClass("navbar-bottom--mobile_visible");
+
     if(body.css("overflow") == "hidden") {
       body.css({"overflow":"auto"});
     } else {
@@ -53,6 +54,7 @@ $(document).ready(function () {
     var modalOverlay = $(".modal__overlay");
     var modalDialog = $(".modal__dialog");
 
+    
     modalOverlay.addClass("modal__overlay--visible");
     modalDialog.addClass("modal__dialog--visible");
   }
