@@ -83,4 +83,31 @@ $(document).ready(function () {
     });
   });
 
+  $(".form--validate").each(function() {
+    $(this).validate({
+      errorClass: "validate-error",
+      messages: {
+        name: "Please specify your name",
+        email: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+        emailSubscribe: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      },
+    });
+  });
+
+  $(".newsletter-form").validate({
+      errorClass: "validate-newsletter",
+      messages: {
+        emailSubscribe: {
+          required: "We need your email address to contact you",
+          email: "Your email address must be in the format of name@domain.com"
+        },
+      },
+    });
+
 });

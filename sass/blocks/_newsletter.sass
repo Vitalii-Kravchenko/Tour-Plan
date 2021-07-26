@@ -9,24 +9,35 @@
     height: 100%
     background: rgba(10, 34, 61, 0.8)
   &-container
-    padding: 101px 0 91px 0
     margin: 0 auto
+    min-height: 260px
     display: flex
     justify-content: space-between
     align-items: center
     max-width: 732px
   &-form
-    margin: 0
-    height: 55px
+    margin-right: auto
+    margin-left: 131px
+    margin-top: 0
+    margin-bottom: 0
+    position: relative
+    transform: translateY(5px)
     &__input
       padding-left: 32px
       padding-top: 4px
       font-size: 14px
+      height: 55px
+      border-radius: 4px
+      overflow: hidden
     &__button
       color: #fff
       +Mulish(bold, 12px)
+      height: 55px
+      border-radius: 0 4px 4px 0
+      overflow: hidden
   &-title
     margin: 0
+    transform: translateY(5px)
     max-width: 250px
     +Mulish(300, 24px)
     color: #fff
@@ -34,3 +45,25 @@
     &__strong
       +Mulish(600, 36px)
       text-transform: uppercase
+
+label.validate
+  &-newsletter
+    margin-top: 15px
+    padding: 15px 30px
+    display: block
+    width: 100%
+    border-radius: 2px
+    background-color: #e85a71
+    color: #fff
+    +Mulish(bold, 12px)
+
+label.validate
+  &-error
+    margin-bottom: 25px
+    padding: 15px 30px
+    display: block
+    width: 100%
+    border-radius: 2px
+    background-color: #e85a71
+    color: #fff
+    +Mulish(bold, 12px)

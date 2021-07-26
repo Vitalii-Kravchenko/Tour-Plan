@@ -437,13 +437,16 @@ img {
   padding: 31px 0 31px 0;
 }
 
-.form {
+.header-form {
   margin-right: auto;
   margin-left: 109px;
   position: relative;
   height: 40px;
-  border-radius: 6px;
   overflow: hidden;
+}
+
+.form {
+  border-radius: 6px;
 }
 
 .form__input {
@@ -994,8 +997,8 @@ img {
 }
 
 .newsletter-container {
-  padding: 101px 0 91px 0;
   margin: 0 auto;
+  min-height: 260px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1009,14 +1012,22 @@ img {
 }
 
 .newsletter-form {
-  margin: 0;
-  height: 55px;
+  margin-right: auto;
+  margin-left: 131px;
+  margin-top: 0;
+  margin-bottom: 0;
+  position: relative;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 .newsletter-form__input {
   padding-left: 32px;
   padding-top: 4px;
   font-size: 14px;
+  height: 55px;
+  border-radius: 4px;
+  overflow: hidden;
 }
 
 .newsletter-form__button {
@@ -1024,10 +1035,15 @@ img {
   font-family: "Mulish", sans-serif;
   font-weight: bold;
   font-size: 12px;
+  height: 55px;
+  border-radius: 0 4px 4px 0;
+  overflow: hidden;
 }
 
 .newsletter-title {
   margin: 0;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
   max-width: 250px;
   font-family: "Mulish", sans-serif;
   font-weight: 300;
@@ -1041,6 +1057,32 @@ img {
   font-weight: 600;
   font-size: 36px;
   text-transform: uppercase;
+}
+
+label.validate-newsletter {
+  margin-top: 15px;
+  padding: 15px 30px;
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #e85a71;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+label.validate-error {
+  margin-bottom: 25px;
+  padding: 15px 30px;
+  display: block;
+  width: 100%;
+  border-radius: 2px;
+  background-color: #e85a71;
+  color: #fff;
+  font-family: "Mulish", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
 }
 
 ::-webkit-scrollbar {
@@ -1722,14 +1764,19 @@ img {
 }
 
 .footer__input {
+  margin-bottom: 15px;
   padding: 19px 23px 18px 23px;
-  width: 47%;
+  width: 100%;
   border: none;
   border-radius: 4px;
   font-family: "Mulish", sans-serif;
   font-weight: normal;
   font-size: 12px;
   outline: none;
+}
+
+.footer__input-group {
+  width: 47%;
 }
 
 .footer__input::-webkit-input-placeholder {
@@ -1775,7 +1822,6 @@ img {
 }
 
 .footer__message {
-  margin-top: 15px;
   padding: 19px 23px 19px 23px;
   width: 100%;
   height: 123px;
@@ -1933,6 +1979,7 @@ img {
           align-items: center;
   padding: 33px 88px;
   position: fixed;
+  max-height: 90vh;
   top: -100%;
   left: 50%;
   max-width: 478px;
@@ -1964,7 +2011,7 @@ img {
 }
 
 .modal__title {
-  margin: 0 0 18px 0;
+  margin: 0 0 3px 0;
   font-family: "Mulish", sans-serif;
   font-weight: bold;
   font-size: 18px;
@@ -2187,7 +2234,6 @@ img {
     height: 210px;
   }
   .newsletter-container {
-    padding: 95px 0 97px 0;
     max-width: 700px;
   }
   .reviews__title {
@@ -2244,6 +2290,15 @@ img {
   .packages__title {
     font-size: 30px;
     margin-bottom: 45px;
+  }
+  .newsletter-title {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  .newsletter-form {
+    margin-left: 108px;
+    -webkit-transform: translateY(-1px);
+            transform: translateY(-1px);
   }
   .footer__container {
     padding: 44px 0 29px 0;
@@ -2302,7 +2357,7 @@ img {
   }
   .footer__input {
     padding: 19px 23px 18px 23px;
-    width: 47%;
+    width: 100%;
   }
   .footer__input-wrapper {
     display: -webkit-box;
@@ -2520,7 +2575,6 @@ img {
     width: 100%;
   }
   .newsletter-container {
-    padding: 70px 0 83px 0;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
@@ -2528,16 +2582,21 @@ img {
     -webkit-box-align: start;
         -ms-flex-align: start;
             align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
     max-width: 88%;
+    min-height: 319px;
   }
   .newsletter-form {
-    margin-top: 34px;
+    margin: 35px 0 0 0;
     width: 280px;
   }
   .newsletter-form__input {
     width: 280px;
   }
   .newsletter-title {
+    margin-top: -13px;
     line-height: 37px;
     font-family: "Mulish", sans-serif;
     font-weight: 300;
@@ -2736,6 +2795,9 @@ img {
         align-self: end;
   }
   .footer__input {
+    width: 100%;
+  }
+  .footer__input-group {
     width: 100%;
   }
   .footer__input:first-child {
