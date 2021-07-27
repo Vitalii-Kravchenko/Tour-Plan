@@ -2306,8 +2306,6 @@ label.validate-error::before {
   }
   .reviews-slider__button {
     top: 53%;
-    -webkit-transform: translateY(-56%);
-            transform: translateY(-56%);
   }
   .reviews-slider__button--prev {
     left: 0;
