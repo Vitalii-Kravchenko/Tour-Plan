@@ -94,7 +94,7 @@ $(document).ready(function () {
         },
         emailSubscribe: {
           required: "We need your email address to contact you",
-          email: "Your email address must be in the format of name@domain.com"
+          email: "Format for email address - name@domain.com"
         },
         phone: {
           required: "Enter your phone number",
@@ -109,7 +109,7 @@ $(document).ready(function () {
     messages: {
       emailSubscribe: {
         required: "We need your email address to contact you",
-        email: "Your email address must be in the format of name@domain.com"
+        email: "Format for email address - name@domain.com"
       },
     },
   });
