@@ -1374,7 +1374,6 @@ label.validate-error::before {
 }
 
 .packages {
-  display: none;
   background-color: #F5FAFE;
   overflow: hidden;
 }
