@@ -121,7 +121,7 @@ $(document).ready(function () {
   function dontSendMessage(sendButton) {
     setTimeout(function() {
       $(sendButton).attr("disabled", "disabled");
-    }, 10);
+    }, 50);
 
     setTimeout(function() {
       $(sendButton).removeAttr("disabled");
