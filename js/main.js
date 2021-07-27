@@ -97,6 +97,7 @@ $(document).ready(function () {
           email: "Your email address must be in the format of name@domain.com"
         },
         phone: {
+          required: "Enter your phone number",
           minlength: "Enter the full number"
         },
       },
