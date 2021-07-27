@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/swiper-bundle.min.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/aos.css" />
     <link rel="shortcut icon" href="img/favicon/favicon.ico" />
     <link
       rel="apple-touch-icon"
@@ -232,7 +233,11 @@
         </div>
         <!-- /.hotel-info -->
         <div class="hotel-grid">
-          <div class="swiper-container hotel-slider">
+          <div
+            class="swiper-container hotel-slider"
+            data-aos="fade-right"
+            data-aos-delay="100"
+          >
             <!-- Additional required wrapper -->
             <div class="swiper-wrapper">
               <!-- Slides -->
@@ -283,7 +288,11 @@
           </div>
 
           <!-- /.slider -->
-          <div class="hotel-description">
+          <div
+            class="hotel-description"
+            data-aos="fade-left"
+            data-aos-delay="200"
+          >
             <div class="hotel-number">
               <div class="hotel-number__main-information">
                 <div class="hotel-price">
@@ -349,7 +358,11 @@
       <div class="container packages__container">
         <h2 class="packages__title">Other Packages</h2>
         <div class="packages-grid">
-          <div class="packages-card packages__first-card">
+          <div
+            class="packages-card packages__first-card"
+            data-aos="fade-up"
+            data-aos-delay="100"
+          >
             <img
               class="packages-card__img packages-card__first-img"
               src="img/packages/packages-1.jpg"
@@ -438,7 +451,7 @@
             <!-- /.packages-info -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="fade-up" data-aos-delay="200">
             <img
               class="packages-card__img"
               src="img/packages/packages-2.jpg"
@@ -489,7 +502,7 @@
             <!-- /.packages-info -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="fade-up" data-aos-delay="100">
             <img
               class="packages-card__img"
               src="img/packages/packages-3.jpg"
@@ -540,7 +553,7 @@
             <!-- /.packages-info -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="fade-up" data-aos-delay="200">
             <img
               class="packages-card__img"
               src="img/packages/packages-4.jpg"
@@ -591,7 +604,7 @@
             <!-- /.packages-info -->
           </div>
           <!-- /.packages-card -->
-          <div class="packages-card">
+          <div class="packages-card" data-aos="fade-up" data-aos-delay="300">
             <img
               class="packages-card__img"
               src="img/packages/packages-5.jpg"
@@ -655,11 +668,17 @@
       data-image-src="img/newsletter/background.jpg"
     >
       <div class="newsletter-container">
-        <h2 class="newsletter-title">
+        <h2 class="newsletter-title" data-aos="fade-right" data-aos-delay="100">
           subscribe to our
           <strong class="newsletter-title__strong">Newsletter</strong>
         </h2>
-        <form class="form newsletter-form" action="send.php" method="POST">
+        <form
+          class="form newsletter-form"
+          action="send.php"
+          method="POST"
+          data-aos="fade-left"
+          data-aos-delay="100"
+        >
           <input
             class="form__input newsletter-form__input"
             type="email"
@@ -679,7 +698,11 @@
         <div class="swiper-container reviews-slider">
           <div class="swiper-wrapper">
             <div class="swiper-slide">
-              <div class="reviews-slider__item">
+              <div
+                class="reviews-slider__item"
+                data-aos="fade-up"
+                data-aos-delay="100"
+              >
                 <div class="reviews-slider__profile">
                   <img
                     class="reviews-slider__img"
@@ -839,9 +862,13 @@
           </div>
           <button
             class="reviews-slider__button reviews-slider__button--prev"
+            data-aos="fade-right"
+            data-aos-delay="100"
           ></button>
           <button
             class="reviews-slider__button reviews-slider__button--next"
+            data-aos="fade-left"
+            data-aos-delay="100"
           ></button>
         </div>
       </div>
@@ -852,7 +879,7 @@
       <div class="container activities__container">
         <h2 class="activities-title">Other Activities</h2>
         <div class="activities-wrapper">
-          <div class="card">
+          <div class="card" data-aos="fade-left" data-aos-delay="100">
             <img
               class="card__img"
               src="img/activities/activities-1.jpg"
@@ -864,7 +891,7 @@
             </button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="fade-left" data-aos-delay="200">
             <img
               class="card__img"
               src="img/activities/activities-2.jpg"
@@ -876,7 +903,7 @@
             </button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="fade-left" data-aos-delay="300">
             <img
               class="card__img"
               src="img/activities/activities-3.jpg"
@@ -890,7 +917,7 @@
             </button>
           </div>
           <!-- /.card -->
-          <div class="card">
+          <div class="card" data-aos="fade-left" data-aos-delay="400">
             <img
               class="card__img"
               src="img/activities/activities-4.jpg"
@@ -1252,6 +1279,7 @@
     <script src="js/swiper-bundle.min.js"></script>
     <script src="js/jquery.validate.min.js"></script>
     <script src="js/jquery.mask.min.js"></script>
+    <script src="js/aos.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>
