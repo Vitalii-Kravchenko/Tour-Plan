@@ -643,6 +643,7 @@ img {
 
 .hotel {
   background-color: #F5FAFE;
+  overflow: hidden;
 }
 
 .hotel__container {
@@ -984,6 +985,7 @@ img {
 
 .newsletter {
   position: relative;
+  overflow: hidden;
 }
 
 .newsletter::before {
@@ -1098,6 +1100,7 @@ label.validate-error {
 
 .reviews {
   background-color: #F5FAFE;
+  overflow: hidden;
 }
 
 .reviews-container {
@@ -1240,6 +1243,7 @@ label.validate-error {
 
 .activities {
   background-color: #F5FAFE;
+  overflow: hidden;
 }
 
 .activities__container {
@@ -1342,6 +1346,7 @@ label.validate-error {
 
 .packages {
   background-color: #F5FAFE;
+  overflow: hidden;
 }
 
 .packages__container {
