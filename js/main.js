@@ -118,4 +118,27 @@ $(document).ready(function () {
 
   AOS.init();
 
+  function dontSendMessage(sendButton) {
+    setTimeout(function() {
+      $(sendButton).attr("disabled", "disabled");
+    }, 10);
+
+    setTimeout(function() {
+      $(sendButton).removeAttr("disabled");
+    }, 5000);
+  }
+  
+
+  $(".modal__button").on('click', function() {
+    dontSendMessage(".modal__button");
+  });
+
+  $(".newsletter-form__button").on('click', function() {
+    dontSendMessage(".newsletter-form__button");
+  });
+
+  $(".footer__button").on('click', function() {
+    dontSendMessage(".footer__button");
+  });
+
 });
