@@ -1072,6 +1072,7 @@ label.validate-newsletter {
   font-size: 10px;
   -webkit-transform: translateY(90%);
           transform: translateY(90%);
+  z-index: 15;
 }
 
 label.validate-newsletter::before {
@@ -1244,8 +1245,6 @@ label.validate-error::before {
 .reviews-slider__button {
   position: absolute;
   top: 52%;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
   z-index: 10;
   width: 30px;
   height: 30px;
@@ -1375,6 +1374,7 @@ label.validate-error::before {
 }
 
 .packages {
+  display: none;
   background-color: #F5FAFE;
   overflow: hidden;
 }
@@ -1813,8 +1813,6 @@ label.validate-error::before {
 .footer__input-group {
   position: relative;
   width: 47%;
-  -webkit-box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
 }
 
 .footer__input::-webkit-input-placeholder {
@@ -1909,8 +1907,6 @@ label.validate-error::before {
   position: relative;
   width: 100%;
   z-index: 6;
-  -webkit-box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
 }
 
 .footer__button {
@@ -2111,8 +2107,6 @@ label.validate-error::before {
 .modal__input-wrapper {
   position: relative;
   z-index: 6;
-  -webkit-box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
 }
 
 .modal__message {
@@ -2165,8 +2159,6 @@ label.validate-error::before {
 .modal__message-wrapper {
   position: relative;
   z-index: 6;
-  -webkit-box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
-          box-shadow: 0px -4px 7px rgba(0, 0, 0, 0.15);
 }
 
 .modal__button {
