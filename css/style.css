@@ -445,6 +445,10 @@ img {
   overflow: hidden;
 }
 
+.header-form__icon {
+  height: 16px;
+}
+
 .form {
   border-radius: 6px;
 }
@@ -503,6 +507,11 @@ img {
 .logo {
   width: 176px;
   height: 17px;
+}
+
+.logo__item {
+  width: 176px;
+  height: 19px;
 }
 
 .user {
@@ -1608,6 +1617,7 @@ label.validate-error::before {
 
 .footer__logo {
   width: 153px;
+  height: 175px;
 }
 
 .footer-list {
@@ -1702,6 +1712,7 @@ label.validate-error::before {
 
 .footer-social__img {
   width: 20px;
+  height: 20px;
 }
 
 .footer-legal {
@@ -1729,6 +1740,7 @@ label.validate-error::before {
 
 .footer-contact__geo-icon {
   width: 14px;
+  height: 20px;
 }
 
 .footer-contact__geo-item {
@@ -1752,7 +1764,8 @@ label.validate-error::before {
 }
 
 .footer-contact__phone-icon {
-  width: 18.21px;
+  width: 18.2px;
+  height: 18.2px;
 }
 
 .footer-contact__link {
@@ -1778,7 +1791,8 @@ label.validate-error::before {
 }
 
 .footer-contact__mail-icon {
-  width: 16.67px;
+  width: 16.66px;
+  height: 12.95px;
 }
 
 .footer-message {
@@ -1981,6 +1995,7 @@ label.validate-error::before {
 
 .footer-bottom__img {
   width: 136px;
+  height: 22px;
 }
 
 .modal__overlay {
@@ -2045,6 +2060,11 @@ label.validate-error::before {
   right: 18px;
   text-decoration: none;
   cursor: pointer;
+}
+
+.modal__close-img {
+  width: 17px;
+  height: 16px;
 }
 
 .modal__title {
