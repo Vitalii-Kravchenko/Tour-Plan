@@ -100,7 +100,7 @@
       &__text
         margin: 22px 0 0 0
       &__button
-        top: 57%
+        top: 53%
         transform: translateY(-56%)
         &--prev
           left: 0
@@ -135,10 +135,10 @@
 
   .newsletter
     &-title
-      transform: translateY(0)
+      margin-top: 0
     &-form
+      margin-top: -2px
       margin-left: 108px
-      transform: translateY(-1px)
 
   .footer
     &__container
@@ -342,7 +342,7 @@
       max-width: 88%
       min-height: 319px
     &-form
-      margin: 35px 0 0 0
+      margin: 34px 0 0 0
       width: 280px
       &__input
         width: 280px
@@ -359,12 +359,10 @@
         top: 82px
         &--prev
           left: 50%
-          transform: translate(-50%, 0)
-          margin-left: -88px
+          margin-left: -102px
         &--next
           right: 50%
-          transform: translate(50%, 0)
-          margin-right: -88px
+          margin-right: -102px
       &__text
         text-align: left
       &__item
@@ -489,6 +487,8 @@
   .modal
     &__dialog
       width: 80%
+    &__form
+      width: 296px
 
 @media (max-width: 480px)
   .container
@@ -555,12 +555,10 @@
         top: 73px
         &--prev
           left: 50%
-          transform: translate(-50%, 0)
-          margin-left: -88px
+          margin-left: -102px
         &--next
           right: 50%
-          transform: translate(50%, 0)
-          margin-right: -88px
+          margin-right: -102px
     &__stars
       margin: 0
     &__text
@@ -671,6 +669,8 @@
   .modal
     &__dialog
       padding: 20px 26px
+      width: 95%
+    &__form
       width: 95%
 
 @media ( min-width: 992px )

@@ -17,12 +17,11 @@
     align-items: center
     max-width: 732px
   &-form
+    margin-top: 10px
     margin-right: auto
     margin-left: 131px
-    margin-top: 0
     margin-bottom: 0
     position: relative
-    transform: translateY(5px)
     &__input
       padding-left: 32px
       padding-top: 4px
@@ -37,8 +36,7 @@
       border-radius: 0 4px 4px 0
       overflow: hidden
   &-title
-    margin: 0
-    transform: translateY(5px)
+    margin: 10px 0 0 0
     max-width: 250px
     +Mulish(300, 24px)
     color: #fff
@@ -49,22 +47,49 @@
 
 label.validate
   &-newsletter
-    margin-top: 15px
-    padding: 15px 30px
+    padding: 5px 10px
+    position: absolute
+    bottom: 0
+    left: 0
     display: block
     width: 100%
-    border-radius: 2px
+    border-radius: 0 0 4px 4px
     background-color: #e85a71
     color: #fff
-    +Mulish(bold, 12px)
+    +Mulish(bold, 10px)
+    transform: translateY(90%)
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 20px
+      z-index: 4
+      width: 6px
+      height: 6px
+      border-radius: 2px 0 0 0
+      background-color: #e85a71
+      transform: translateY(-50%) rotate(45deg)
 
 label.validate
   &-error
-    margin-bottom: 25px
-    padding: 15px 30px
+    padding: 6px 10px 9px 10px
+    position: absolute
+    bottom: -4px
+    left: 0
     display: block
     width: 100%
-    border-radius: 2px
+    border-radius: 0 0 2px 2px
     background-color: #e85a71
     color: #fff
-    +Mulish(bold, 12px)
+    +Mulish(bold, 10px)
+    &::before
+      content: ""
+      position: absolute
+      top: 0
+      left: 20px
+      z-index: 4
+      width: 6px
+      height: 6px
+      border-radius: 2px 0 0 0
+      background-color: #e85a71
+      transform: translateY(-50%) rotate(45deg)
