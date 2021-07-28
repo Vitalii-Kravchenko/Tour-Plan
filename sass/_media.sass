@@ -21,6 +21,8 @@
       &__first
         &-info
           padding: 25px 21px 30px 25px !important
+        &-description
+          height: 180px
       &__img
         width: 100%
         min-height: 250px
@@ -387,12 +389,7 @@
       font-size: 26px
 
   .card
-    width: 100%
-    &:nth-child(2)
-      margin-top: 8px
-      order: 2
-    &:nth-child(4)
-      order: 4
+    width: 48%
 
   .activities
     &__container
@@ -506,6 +503,15 @@
     &__form
       width: 296px
 
+@media (max-width: 600px )
+  .card
+    width: 100%
+    &:nth-child(2)
+      margin-top: 8px
+      order: 2
+    &:nth-child(4)
+      order: 4
+
 @media (max-width: 480px)
   .container
     width: 88%
@@ -566,7 +572,7 @@
     &-slider
       &__item
         margin: 87px auto 0
-        padding: 0 31px 35px 33px
+        padding: 0 31px 35px 30px
       &__button
         top: 73px
         &--prev
