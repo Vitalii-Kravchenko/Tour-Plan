@@ -1440,7 +1440,8 @@ label.validate-error::before {
 }
 
 .packages-card__img {
-  min-height: 250px;
+  width: 350px;
+  height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
@@ -1460,6 +1461,7 @@ label.validate-error::before {
 }
 
 .packages-card__first-img {
+  width: 365px;
   height: 500px;
 }
 
@@ -2218,6 +2220,16 @@ label.validate-error::before {
   }
   .packages-card__first-info {
     padding: 25px 21px 30px 25px !important;
+  }
+  .packages-card__img {
+    width: 100%;
+    min-height: 250px;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  .packages-card__first-img {
+    width: 100%;
+    height: 500px;
   }
   .footer-grid {
     -ms-grid-columns: (minmax(200px, 1fr))[4];
